@@ -1,0 +1,58 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  height: 100vh;
+}
+
+.left-panel {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.siip-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.form-control,
+.btn {
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-icon {
+  font-size: 100px;    /* Ícono más grande */
+  color: #000;
+  margin: 2rem 0 2.5rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* Aquí se aplica la imagen subida */
+.right-panel {
+  background: url('img/imgbuild.PNG') center center/cover no-repeat;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .right-panel {
+    display: none;
+  }
+}

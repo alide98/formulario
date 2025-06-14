@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Invitado</title>
+    <link rel="stylesheet" href="styleInvitado.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="formulario-contenedor">
+        <h2><i class="fa-solid fa-user-plus"></i> Registro de Invitado</h2>
+        <form action="guardar_invitado.php" method="post">
+            <div class="grupo-campo">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="torre">Torre a ingresar:</label>
+                <select id="torre" name="torre" required>
+                    <option value="">Seleccionar Torre</option>
+                    <option value="1">Torre 1</option>
+                    <option value="2">Torre 2</option>
+                    <option value="3">Torre 3</option>
+                    <option value="4">Torre 4</option>
+                    <option value="5">Torre 5</option>
+                    <option value="6">Torre 6</option>
+                    <option value="7">Torre 7</option>
+                    <option value="8">Torre 8</option>
+                    <option value="9">Torre 9</option>
+                    <option value="10">Torre 10</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apto">Apartamento:</label>
+                <input type="text" id="apto" name="apto" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="parentesco">Parentesco:</label>
+                <input type="text" id="parentesco" name="parentesco" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="vehiculo">Vehículo:</label>
+                <select id="vehiculo" name="vehiculo" required>
+                    <option value="motocicleta">Motocicleta</option>
+                    <option value="carro">Carro</option>
+                    <option value="ninguno">Ninguno</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="placa">Placa (si aplica):</label>
+                <input type="text" id="placa" name="placa" />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="fecha_entrada">Fecha de entrada:</label>
+                <input type="date" id="fecha_entrada" name="fecha_entrada" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="hora_entrada">Hora de entrada:</label>
+                <input type="time" id="hora_entrada" name="hora_entrada" required />
+            </div>
+
+            <div class="grupo-campo">
+                <label for="motivo">Motivo de la visita:</label>
+                <textarea id="motivo" name="motivo" rows="3"></textarea>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
