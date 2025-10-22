@@ -1,0 +1,158 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1a1a1a, #333);
+  color: white;
+  min-height: 100vh;
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ======== FORMULARIO DE BÚSQUEDA ======== */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"] {
+  border-radius: 30px;
+  border: none;
+  padding: 12px 20px;
+  width: 50%;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+form button {
+  border-radius: 30px;
+  margin-left: 10px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ======== TABLA DE RESULTADOS ======== */
+.table {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.table th {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.table td {
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ======== BOTONES ======== */
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #b71c1c;
+}
+
+/* ======== FORMULARIO DE EDICIÓN ======== */
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.card input[type="text"], 
+.card input[type="date"], 
+.card input[type="time"], 
+.card textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card input:focus, 
+.card textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #ccc;
+}
+
+/* ======== ALERTAS ======== */
+.alert {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
