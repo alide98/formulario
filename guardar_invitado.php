@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; // si tu instalación tiene password, cámbialo aquí
+$password = ""; 
 $dbname = "proyecto";
 
 // Crear conexión
